@@ -1,0 +1,2 @@
+# Geomancy
+n/a
