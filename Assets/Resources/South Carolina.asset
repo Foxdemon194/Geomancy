@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efcabf65f50a16645aea5ffa7e07496b, type: 3}
+  m_Name: South Carolina
+  m_EditorClassIdentifier: 
+  enemyName: South Carolina
+  enemySprite: {fileID: 21300000, guid: 393e2163766edcc4aba5f09c02c7173a, type: 3}
+  cityName1: Columbia
+  cityName2: Charleston
+  cityName3: North Charleston
+  cityName4: Mount Pleasant
+  capital: Columbia
+  damage: 1
+  health: 1

@@ -25,4 +25,9 @@ public class MenuButtons : MonoBehaviour
     {
         SceneManager.LoadScene("Credits");
     }
+
+    public void LoadPrologue()
+    {
+        SceneManager.LoadScene("Prologue");
+    }
 }

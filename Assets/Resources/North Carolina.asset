@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efcabf65f50a16645aea5ffa7e07496b, type: 3}
+  m_Name: North Carolina
+  m_EditorClassIdentifier: 
+  enemyName: North Carolina
+  enemySprite: {fileID: 21300000, guid: 5dcdd5d4593178d41889f6a76c9d5fec, type: 3}
+  cityName1: Charlotte
+  cityName2: Raleigh
+  cityName3: Greensboro
+  cityName4: Durham
+  capital: Raleigh
+  damage: 1
+  health: 1
