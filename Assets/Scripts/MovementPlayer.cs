@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Animations;
 
 public class MovementPlayer : MonoBehaviour
 {
@@ -12,13 +13,19 @@ public class MovementPlayer : MonoBehaviour
     public Camera cam;
 
     Vector2 movement;
+    Animator anim;
 
     public GameObject pauseMenu;
+
+    Transform trans;
+
 
     // Start is called before the first frame update
     void Start()
     {
         Time.timeScale = 1;
+        anim = GetComponent<Animator>();
+        trans = GetComponent<Transform>();
     }
 
     // Update is called once per frame
@@ -36,37 +43,52 @@ public class MovementPlayer : MonoBehaviour
     public void MoveLeftDown()
     {
         movement.x = -1;
+        anim.SetTrigger("Walk");
+        trans.localScale = new Vector3(-.6f, .6f, 1);
     }
     public void MoveLeftUp()
     {
         movement.x = 0;
+        anim.SetTrigger("Idle");
     }
 
     public void MoveRightDown()
     {
         movement.x = 1;
+        anim.SetTrigger("Walk");
+        trans.localScale = new Vector3(.6f, .6f, 1);
     }
     public void MoveRightUp()
     {
         movement.x = 0;
+        anim.SetTrigger("Idle");
+
     }
 
     public void MoveDownDown()
     {
         movement.y = -1;
+        anim.SetTrigger("Walk");
+
     }
     public void MoveDownUp()
     {
         movement.y = 0;
+        anim.SetTrigger("Idle");
+
     }
 
     public void MoveUpDown()
     {
         movement.y = 1;
+        anim.SetTrigger("Walk");
+
     }
     public void MoveUpUp()
     {
         movement.y = 0;
+        anim.SetTrigger("Idle");
+
     }
 
     public void MenuOpen()
