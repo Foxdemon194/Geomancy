@@ -103,6 +103,13 @@ public class MovementPlayer : MonoBehaviour
         Time.timeScale = 1;
     }
 
+    public void MainMenu()
+    {
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1;
+        SceneManager.LoadScene("MainMenu");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
