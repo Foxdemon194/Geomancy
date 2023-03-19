@@ -11,8 +11,9 @@ public class battleButtons : MonoBehaviour
     public bool musicOn = false;
 
     private string capital;
+
     // Start is called before the first frame update
-    void Start()
+    void Start() 
     {
         capital = GetComponent<Encounter>().capital;
     }
@@ -25,6 +26,7 @@ public class battleButtons : MonoBehaviour
 
     public void endBattle()
     {
+        AudioHolder.staticSource.UnPause();//david added this
         Destroy(battleSceneHolder.gameObject);
         holderDestroyed = true;
         afterBattle();
@@ -38,6 +40,6 @@ public class battleButtons : MonoBehaviour
 
     private void OnDestroy()
     {
-        GetComponent<enemyEncounter>().doomed = true;
+        //GetComponent<enemyEncounter>().doomed = true; //david removed this
     }
 }
