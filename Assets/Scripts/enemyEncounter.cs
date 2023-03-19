@@ -7,6 +7,7 @@ public class enemyEncounter : MonoBehaviour
 {
     public GameObject oldAudio;
     public bool doomed;
+    public AudioSource musicObject; //David added this
 
     // Start is called before the first frame update
     void Start()
@@ -18,11 +19,12 @@ public class enemyEncounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (doomed == true)
         {
-            Debug.Log("Labrobro");
+            Debug.Log("Labrobro");           //David removed this
             Destroy(this.gameObject);
-        }
+        }*/
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -31,7 +33,9 @@ public class enemyEncounter : MonoBehaviour
         {
             Time.timeScale = 0;
             Application.LoadLevelAdditive("BattleScene");
-            oldAudio.gameObject.SetActive(false);
+            //oldAudio.gameObject.SetActive(false); //david removed this
+            musicObject.Pause(); //david added this
+            gameObject.SetActive(false); // David added this
         }
     }
 }

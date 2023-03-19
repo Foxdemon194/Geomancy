@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class enemyEncounter2 : MonoBehaviour
 {
     public GameObject oldAudio;
+    public AudioSource musicObject; //david added this
+
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +27,10 @@ public class enemyEncounter2 : MonoBehaviour
         {
             Time.timeScale = 0;
             Application.LoadLevelAdditive("BattleScene2");
-            oldAudio.gameObject.SetActive(false);
+            //oldAudio.gameObject.SetActive(false);//david removed this
+            musicObject.Pause(); //david added this
+            gameObject.SetActive(false); // David added this
+
         }
     }
 }
