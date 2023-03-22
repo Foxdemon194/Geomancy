@@ -30,4 +30,9 @@ public class MenuButtons : MonoBehaviour
     {
         SceneManager.LoadScene("Prologue");
     }
+
+    public void OpenSurvey()
+    {
+        Application.OpenURL("https://forms.gle/BpUdaeUdTYheBjya8");
+    }
 }
