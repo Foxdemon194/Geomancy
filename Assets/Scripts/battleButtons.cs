@@ -44,6 +44,12 @@ public class battleButtons : MonoBehaviour
 
     public void Wrong()
     {
-        //healthManager.WrongAnswer();
+        //GetComponent<HealthManager>().WrongAnswer();
+    }
+
+    public void endBattleBoss()
+    {
+        Destroy(battleSceneHolder.gameObject);
+        SceneManager.LoadScene("Epilogue");
     }
 }

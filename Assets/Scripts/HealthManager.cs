@@ -51,5 +51,6 @@ public class HealthManager : MonoBehaviour
     public void WrongAnswer()
     {
         health -= 1;
+        Debug.Log("hasbik");
     }
 }

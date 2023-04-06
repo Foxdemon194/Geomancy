@@ -2079,7 +2079,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleSceneHolder: {fileID: 1498726372}
-  heartsArray: []
 --- !u!4 &2048103961
 Transform:
   m_ObjectHideFlags: 0

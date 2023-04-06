@@ -322,8 +322,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146097243}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -953.93, y: -203.54633, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalPosition: {x: -952.878, y: -203.54633, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1095533158}
@@ -650,7 +650,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.30495724, g: 0.7151942, b: 0.8396226, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -864,7 +864,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 226600126}
         m_TargetAssemblyTypeName: battleButtons, Assembly-CSharp
-        m_MethodName: endBattle
+        m_MethodName: endBattleBoss
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
