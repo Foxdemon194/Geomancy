@@ -33,9 +33,9 @@ public class enemyEncounter : MonoBehaviour
         {
             Time.timeScale = 0;
             Application.LoadLevelAdditive("BattleScene");
-            //oldAudio.gameObject.SetActive(false); //david removed this
             musicObject.Pause(); //david added this
-            gameObject.SetActive(false); // David added this
+            //oldAudio.gameObject.SetActive(false); //david removed this
+            //gameObject.SetActive(false); // David added this
         }
     }
 }

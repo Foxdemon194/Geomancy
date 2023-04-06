@@ -16,27 +16,27 @@ public class HealthManager : MonoBehaviour
         health = 3;
     }
 
-     void Update()
+    void Update()
     {
-        if(health == 3)
+        if (health == 3)
         {
             heartContainer1.SetActive(true);
             heartContainer2.SetActive(true);
             heartContainer3.SetActive(true);
         }
-        else if(health == 2)
+        else if (health == 2)
         {
             heartContainer1.SetActive(true);
             heartContainer2.SetActive(true);
             heartContainer3.SetActive(false);
         }
-        else if(health == 1)
+        else if (health == 1)
         {
             heartContainer1.SetActive(true);
             heartContainer2.SetActive(false);
             heartContainer3.SetActive(false);
         }
-        else if(health <= 0)
+        else if (health <= 0)
         {
             heartContainer1.SetActive(false);
             heartContainer2.SetActive(false);
@@ -52,5 +52,4 @@ public class HealthManager : MonoBehaviour
     {
         health -= 1;
     }
-
 }

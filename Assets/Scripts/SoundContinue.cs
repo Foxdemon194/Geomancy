@@ -22,8 +22,7 @@ public class SoundContinue : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Level1")
         {
-            GetComponent<AudioSource>().volume = 0f;
-            currentLevelMusic.volume = 0.4f;
+            Destroy(this.gameObject);
         }
         else if (SceneManager.GetActiveScene().name == "BattleScene")
         {

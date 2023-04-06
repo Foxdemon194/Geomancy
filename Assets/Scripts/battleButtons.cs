@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class battleButtons : MonoBehaviour
 {
+    //HealthManager healthManager;
     public GameObject battleSceneHolder;
-    public bool holderDestroyed = false;
-    public bool musicOn = false;
+    //public bool holderDestroyed = false;
+    //public bool musicOn = false;
 
     private string capital;
 
@@ -21,25 +22,28 @@ public class battleButtons : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if ()
+
     }
 
     public void endBattle()
     {
-        AudioHolder.staticSource.UnPause();//david added this
         Destroy(battleSceneHolder.gameObject);
-        holderDestroyed = true;
         afterBattle();
+        AudioHolder.staticSource.UnPause();//david added this
     }
 
     public void afterBattle()
     {
         Time.timeScale = 1;
-        holderDestroyed = true;
     }
 
     private void OnDestroy()
     {
-        //GetComponent<enemyEncounter>().doomed = true; //david removed this
+
+    }
+
+    public void Wrong()
+    {
+        //healthManager.WrongAnswer();
     }
 }
