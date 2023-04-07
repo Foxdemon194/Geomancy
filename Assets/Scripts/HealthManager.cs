@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HealthManager : MonoBehaviour
 {
-    [SerializeField] int health;
+    public static int health;
     public GameObject heartContainer1;
     public GameObject heartContainer2;
     public GameObject heartContainer3;
@@ -18,6 +18,8 @@ public class HealthManager : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(health);
+
         if (health == 3)
         {
             heartContainer1.SetActive(true);

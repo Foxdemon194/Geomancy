@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -44,7 +45,13 @@ public class battleButtons : MonoBehaviour
 
     public void Wrong()
     {
-        //GetComponent<HealthManager>().WrongAnswer();
+        HealthManager.health--;    
+    }
+
+    public void BossWrong()
+    {
+        HealthManager.health--;
+        HealthManager.health--;
     }
 
     public void endBattleBoss()
